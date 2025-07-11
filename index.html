@@ -1,0 +1,65 @@
+<div id="header"></div>
+<head>
+  <title>Beyaz Eşya Servisi | İstanbul'un En İyi Beyaz Eşya Tamir, Bakım ve Onarım Hizmeti</title>
+  <meta name="description" content="Beyaz eşya servisi, buzdolabı, çamaşır makinesi, bulaşık makinesi, fırın, klima, kombi ve televizyon için hızlı, güvenilir ve uygun fiyatlı tamir, bakım ve arıza hizmetleri. İstanbul genelinde profesyonel teknik servis.">
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      fetch('/includes/header.html').then(r=>r.text()).then(html=>{
+        document.getElementById('header').innerHTML = html;
+      });
+      fetch('/includes/footer.html').then(r=>r.text()).then(html=>{
+        document.getElementById('footer').innerHTML = html;
+      });
+    });
+  </script>
+</head>
+<main style="max-width:900px;margin:32px auto 0 auto;padding:0 16px;font-family:Arial,sans-serif;">
+  <style>
+    @media (max-width:600px) {
+      main { padding: 0 4vw; font-size: 15px; }
+      main h1, main h2 { font-size: 1.3em; }
+      #makale, #yorumlar { padding: 0; }
+      #yorumlar ul { grid-template-columns: 1fr !important; }
+      #makale p { font-size: 11px; }
+      .vurgulu-servis-yazi { font-size: 9px !important; line-height: 1.2 !important; }
+    }
+    main h1 { color:#1976d2; font-size:2.1em; margin-bottom:8px; }
+    main h2 { color:#1565c0; font-size:1.3em; margin-top:32px; }
+    #makale, #yorumlar { background:#fff; border-radius:12px; box-shadow:0 2px 12px #0001; padding:24px 18px; margin:24px 0; }
+    #yorumlar ul { display:grid; grid-template-columns: 1fr 1fr; gap:18px; padding:0; margin:0; list-style:none; }
+    #yorumlar li { background:#e3f2fd; border-radius:12px; padding:18px 16px; box-shadow:0 2px 8px #0001; display:flex; flex-direction:column; justify-content:space-between; min-height:110px; }
+    #yorumlar li span[itemprop="reviewBody"] { color:#1976d2; font-weight:600; font-size:1.08em; margin-bottom:10px; display:block; }
+    #yorumlar li span[itemprop="author"],
+    #yorumlar li .review-author {
+      color:#444;
+      font-size:0.88em;
+      font-weight:400;
+      margin-top:2px;
+      align-self:center;
+      display:block;
+      text-align:center;
+    }
+  </style>
+  <h1 itemprop="name">Beyaz Eşya Servisi</h1>
+  <div style="text-align:center;margin:18px 0 24px 0;">
+    <div class="vurgulu-servis-yazi" style="font-size:11px;font-weight:500;background:#fff;border-radius:16px;padding:16px 14px 14px 14px;box-shadow:0 2px 12px #0001;letter-spacing:0.01em;line-height:1.6;color:#1976d2;margin-bottom:12px;font-family:'Montserrat',Arial,sans-serif;">
+      <span style="font-weight:bold; text-transform:uppercase;">HER MARKA VE MODEL BEYAZ EŞYA İÇİN</span> <span style="font-weight:bold; text-transform:uppercase;">HIZLI</span> ve <span style="font-weight:bold; text-transform:uppercase;">GÜVENİLİR</span><br>
+      <span style="font-weight:bold; text-transform:uppercase;">PROFESYONEL SERVİS HİZMETİ</span>
+    </div>
+    <a href="tel:05551234567" class="footer-tel-btn" style="display:inline-block;background:#1976d2;color:#fff;font-weight:bold;border:none;border-radius:8px;padding:18px 40px;font-size:24px;box-shadow:0 2px 8px #0001;transition:background .2s;text-decoration:none;">Şimdi Ara: 0555 123 45 67</a>
+  </div>
+  <section id="makale">
+    <h2>Beyaz Eşya Servisi Hakkında Bilgilendirici Makale</h2>
+    <p itemprop="articleBody">Beyaz eşya servisi, buzdolabı, çamaşır makinesi, bulaşık makinesi, fırın, klima, kombi ve televizyon gibi cihazların tamir, bakım ve arıza hizmetlerini kapsar. [Buraya 10.000 kelimelik makale eklenecek. Şimdilik örnek uzun metin: Beyaz eşyalarınızın ömrünü uzatmak ve verimli çalışmasını sağlamak için düzenli bakım ve profesyonel servis hizmeti almak önemlidir. ...]</p>
+  </section>
+  <section id="yorumlar" itemscope itemtype="https://schema.org/Review">
+    <h2>Müşteri Yorumları</h2>
+    <ul>
+      <li itemprop="review"><span itemprop="reviewBody">Çok hızlı ve güvenilir bir servis, teşekkürler!</span><span class="review-author" itemprop="author">Ayşe K.</span></li>
+      <li itemprop="review"><span itemprop="reviewBody">Uygun fiyat ve kaliteli hizmet.</span><span class="review-author" itemprop="author">Mehmet T.</span></li>
+      <li itemprop="review"><span itemprop="reviewBody">Usta çok ilgiliydi, sorunum hemen çözüldü.</span><span class="review-author" itemprop="author">Ali S.</span></li>
+      <li itemprop="review"><span itemprop="reviewBody">Çalışanlar çok nazik ve profesyonel.</span><span class="review-author" itemprop="author">Fatma L.</span></li>
+    </ul>
+  </section>
+</main>
+<div id="footer"></div>

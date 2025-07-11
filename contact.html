@@ -1,0 +1,60 @@
+<div id="header"></div>
+<head>
+  <title>İletişim | Beyaz Eşya Servisi - Hızlı Teknik Destek ve Servis</title>
+  <meta name="description" content="Beyaz Eşya Servisi iletişim: İstanbul genelinde beyaz eşya tamir, bakım ve arıza için hızlı destek. Telefon, e-posta ve adres bilgilerimizle bize kolayca ulaşın.">
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      fetch('/includes/header.html').then(r=>r.text()).then(html=>{
+        document.getElementById('header').innerHTML = html;
+      });
+      fetch('/includes/footer.html').then(r=>r.text()).then(html=>{
+        document.getElementById('footer').innerHTML = html;
+      });
+    });
+  </script>
+</head>
+<main style="max-width:900px;margin:32px auto 0 auto;padding:0 16px;font-family:Arial,sans-serif;">
+  <style>
+    @media (max-width:600px) {
+      main { padding: 0 4vw; font-size: 15px; }
+      main h1, main h2 { font-size: 1.3em; }
+      #makale, #yorumlar, #contact-info { padding: 0; }
+      #yorumlar ul { grid-template-columns: 1fr !important; }
+    }
+    main h1 { color:#1976d2; font-size:2.1em; margin-bottom:8px; }
+    main h2 { color:#1565c0; font-size:1.3em; margin-top:32px; }
+    #contact-info, #makale, #yorumlar { background:#fff; border-radius:12px; box-shadow:0 2px 12px #0001; padding:24px 18px; margin:24px 0; }
+    #contact-info ul { padding:0; margin:0; list-style:none; }
+    #contact-info li { margin-bottom:10px; }
+    #contact-info a { color:#1976d2; font-weight:bold; text-decoration:none; }
+    #contact-info a:hover { text-decoration:underline; }
+    #yorumlar ul { display:grid; grid-template-columns: 1fr 1fr; gap:18px; padding:0; margin:0; list-style:none; }
+    #yorumlar li { background:#e3f2fd; border-radius:12px; padding:18px 16px; box-shadow:0 2px 8px #0001; display:flex; flex-direction:column; justify-content:space-between; min-height:110px; }
+    #yorumlar li span[itemprop="reviewBody"] { color:#1976d2; font-weight:600; font-size:1.08em; margin-bottom:10px; display:block; }
+    #yorumlar li span[itemprop="author"] { color:#444; font-size:0.98em; font-weight:400; margin-top:auto; align-self:flex-end; }
+  </style>
+  <h1 itemprop="name">İletişim</h1>
+  <section id="contact-info">
+    <h2>İletişim Bilgileri</h2>
+    <ul>
+      <li>Telefon: <a href="tel:05551234567" itemprop="telephone">0555 123 45 67</a></li>
+      <li>E-posta: <a href="mailto:info@beyazesyaservisi.com" itemprop="email">info@beyazesyaservisi.com</a></li>
+      <li itemprop="address">Adres: [Buraya adres gelecek]</li>
+    </ul>
+  </section>
+  <section id="makale">
+    <h2>Beyaz Eşya Servisi Hakkında Makale</h2>
+    <p itemprop="description">Beyaz eşya servisi, buzdolabı, çamaşır makinesi, bulaşık makinesi, fırın, klima, kombi ve televizyon gibi cihazların tamir, bakım ve arıza hizmetlerini kapsar. [Buraya 10.000 kelimelik makale eklenecek. Şimdilik örnek uzun metin: Beyaz eşyalarınızın ömrünü uzatmak ve verimli çalışmasını sağlamak için düzenli bakım ve profesyonel servis hizmeti almak önemlidir. ...]</p>
+  </section>
+  <section id="yorumlar" itemscope itemtype="https://schema.org/Review">
+    <h2>Müşteri Yorumları</h2>
+    <ul>
+      <li itemprop="review"><span itemprop="reviewBody">Çok hızlı ve güvenilir bir servis, teşekkürler!</span>  <span itemprop="author">Ayşe K.</span></li>
+      <li itemprop="review"><span itemprop="reviewBody">Uygun fiyat ve kaliteli hizmet.</span>  <span itemprop="author">Mehmet T.</span></li>
+      <li itemprop="review"><span itemprop="reviewBody">Usta çok ilgiliydi, sorunum hemen çözüldü.</span>  <span itemprop="author">Ali S.</span></li>
+      <li itemprop="review"><span itemprop="reviewBody">Çalışanlar çok nazik ve profesyonel.</span>  <span itemprop="author">Fatma L.</span></li>
+    </ul>
+  </section>
+  <div style="margin-top:24px;color:#b00;font-weight:bold;">Bu site yetkili servis değildir. Sadece garantisi olmayan cihazlar için hizmet verilmektedir.</div>
+</main>
+<div id="footer"></div> 
