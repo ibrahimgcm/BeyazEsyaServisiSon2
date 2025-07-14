@@ -1,4 +1,8 @@
 <footer style="background:#e3f2fd;padding:28px 0 16px 0;text-align:center;font-size:15px;font-family:Arial,sans-serif;border-radius:16px 16px 0 0;box-shadow:0 -2px 8px #0001;margin-top:32px;">
+ <head>
+  <link rel="stylesheet" href="assets/css/style.css"> 
+ </head>
+
   <nav>
     <ul class="footer-menu">
       <li><a href="/index.html">Ana Sayfa</a></li>
@@ -21,9 +25,9 @@
     <div style="margin-bottom:2px;font-weight:bold;">Hemen Servis Alın</div>
     <div class="footer-servis-yazi" style="margin-bottom:4px;">Her marka ve model beyaz eşya için hızlı ve güvenilir ve profesyonel servis hizmeti.</div>
     <a href="tel:05551234567" class="footer-tel-btn" style="display:inline-block;">Şimdi Ara: 0555 123 45 67</a>
-    <div style="margin-top:8px;color:#444;font-size:14px;">Beyaz Eşya Servisi | İstanbul, Türkiye</div>
+    <div style="margin-top:8px;color:#fff;font-size:14px;">Beyaz Eşya Servisi | İstanbul, Türkiye</div>
   </div>
-  <div style="margin-top:8px;font-size:13px;color:#888;">&copy; 2024 Beyaz Eşya Servisi</div>
+  <div style="margin-top:8px;font-size:13px;color:#fff;">&copy; 2024 Beyaz Eşya Servisi</div>
   <style>
     @media (max-width:600px) {
       .footer-menu, .footer-menu * {
@@ -36,6 +40,13 @@
         margin: 0 !important;
         padding: 0 !important;
         list-style: none !important;
+      }
+      .footer-menu li a {
+        min-width: 48px;
+        min-height: 48px;
+        padding: 12px 18px;
+        display: block !important;
+        box-sizing: border-box;
       }
     }
     @media (min-width:601px) {
@@ -57,6 +68,10 @@
       .footer-menu li a {
         display: inline-block !important;
         width: auto !important;
+        min-width: 48px;
+        min-height: 48px;
+        padding: 12px 18px;
+        box-sizing: border-box;
       }
     }
     footer nav ul li a:hover { color:#fff; background:#1976d2; border-radius:6px; transition:background .2s; }

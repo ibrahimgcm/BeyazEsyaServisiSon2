@@ -1,7 +1,11 @@
+<!DOCTYPE html>
+<html lang="tr">
 <div id="header"></div>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
   <title id="dynamic-title">Hizmet</title>
+  <link rel="stylesheet" href="assets/css/style.css">
   <meta name="description" id="dynamic-desc" content="Beyaz eşya servisi hizmetleri hakkında detaylı bilgi alın.">
   <script>
     // Dinamik başlık ve meta
@@ -19,6 +23,25 @@
       document.getElementById('dynamic-desc').setAttribute('content', desc);
       document.title = title;
     });
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://wp.serpsonic.com" },
+      { "@type": "ListItem", "position": 2, "name": "Beyaz Eşya Servisi, Buzdolabı, Çamaşır Makinesi, Bulaşık Makinesi, Fırın, Klima, Kombi Ve Televizyon", "item": "https://wp.serpsonic.com/Beyaz-Eya-Servisi-Buzdolab-amar-Makinesi-Bulak-Makinesi-Frn-Klima-Kombi-Ve-Televizyon" },
+      { "@type": "ListItem", "position": 3, "name": "1", "item": "https://wp.serpsonic.com/Beyaz-Eya-Servisi-Buzdolab-amar-Makinesi-Bulak-Makinesi-Frn-Klima-Kombi-Ve-Televizyon/1" },
+      { "@type": "ListItem", "position": 4, "name": "Buzdolabı Servisi Çağırmadan Önce Yapılması Gereken Kontroller", "item": "https://wp.serpsonic.com/Beyaz-Eya-Servisi-Buzdolab-amar-Makinesi-Bulak-Makinesi-Frn-Klima-Kombi-Ve-Televizyon/Buzdolab-Servisi-armadan-nce-Yaplmas-Gereken-Kontroller" },
+      { "@type": "ListItem", "position": 5, "name": "2", "item": "https://wp.serpsonic.com/Beyaz-Eya-Servisi-Buzdolab-amar-Makinesi-Bulak-Makinesi-Frn-Klima-Kombi-Ve-Televizyon/2" },
+      { "@type": "ListItem", "position": 6, "name": "Çamaşır Makinesi Tamiri: En Sık Karşılaşılan Arızalar ve Çözümleri", "item": "https://wp.serpsonic.com/Beyaz-Eya-Servisi-Buzdolab-amar-Makinesi-Bulak-Makinesi-Frn-Klima-Kombi-Ve-Televizyon/amar-Makinesi-Tamiri-En-Sk-Karlalan-Arzalar-ve-zmleri" },
+      { "@type": "ListItem", "position": 7, "name": "3", "item": "https://wp.serpsonic.com/Beyaz-Eya-Servisi-Buzdolab-amar-Makinesi-Bulak-Makinesi-Frn-Klima-Kombi-Ve-Televizyon/3" },
+      { "@type": "ListItem", "position": 8, "name": "Bulaşık Makinesi Servisi: Su Akıtma Sorununa Ne İyi Gelir?", "item": "https://wp.serpsonic.com/Beyaz-Eya-Servisi-Buzdolab-amar-Makinesi-Bulak-Makinesi-Frn-Klima-Kombi-Ve-Televizyon/Bulak-Makinesi-Servisi-Su-Aktma-Sorununa-Ne-yi-Gelir" },
+      { "@type": "ListItem", "position": 9, "name": "4", "item": "https://wp.serpsonic.com/Beyaz-Eya-Servisi-Buzdolab-amar-Makinesi-Bulak-Makinesi-Frn-Klima-Kombi-Ve-Televizyon/4" },
+      { "@type": "ListItem", "position": 10, "name": "Fırın Tamiri: Isıtmama Problemi Nasıl Giderilir?", "item": "https://wp.serpsonic.com/Beyaz-Eya-Servisi-Buzdolab-amar-Makinesi-Bulak-Makinesi-Frn-Klima-Kombi-Ve-Televizyon/Frn-Tamiri-Istmama-Problemi-Nasl-Giderilir" }
+      // ... diğer adımlarınızı da ekleyin
+    ]
+  }
   </script>
 </head>
 <main style="max-width:900px;margin:32px auto 0 auto;padding:0 16px;font-family:Arial,sans-serif;">
@@ -43,18 +66,10 @@
     @media (max-width:900px) {
       #yorumlar ul { grid-template-columns: 1fr; }
     }
-    #yorumlar li { background:#e3f2fd; border-radius:12px; padding:18px 16px; box-shadow:0 2px 8px #0001; display:flex; flex-direction:column; justify-content:space-between; min-height:110px; }
-    #yorumlar li span[itemprop="reviewBody"] { color:#1976d2; font-weight:600; font-size:1.08em; margin-bottom:10px; display:block; }
+    #yorumlar li { background:#bbdefb; border-radius:12px; padding:18px 16px; box-shadow:0 2px 8px #0001; display:flex; flex-direction:column; justify-content:space-between; min-height:110px; }
+    #yorumlar li span[itemprop="reviewBody"] { color:#0d47a1; font-weight:600; font-size:1.08em; margin-bottom:10px; display:block; }
     #yorumlar li span[itemprop="author"],
-    #yorumlar li .review-author {
-      color:#444;
-      font-size:0.92em;
-      font-weight:400;
-      margin-top:4px;
-      align-self:center;
-      display:block;
-      text-align:center;
-    }
+    #yorumlar li .review-author { color:#111; font-size:0.92em; font-weight:400; margin-top:4px; align-self:center; display:block; text-align:center; }
   </style>
   <h1 id="dynamic-h1" itemprop="name">Hizmet</h1>
   <div style="text-align:center;margin:18px 0 24px 0;">
@@ -65,6 +80,7 @@
     <a href="tel:05551234567" class="footer-tel-btn" style="display:inline-block;background:#1976d2;color:#fff;font-weight:bold;border:none;border-radius:8px;padding:18px 40px;font-size:24px;box-shadow:0 2px 8px #0001;transition:background .2s;text-decoration:none;">Şimdi Ara: 0555 123 45 67</a>
   </div>
   <p id="dynamic-summary" itemprop="description">[Buraya dinamik olarak özet eklenebilir]</p>
+  <p>Beyaz Eşya Servisi, Buzdolabı, Çamaşır Makinesi, Bulaşık Makinesi, Fırın, Klima, Kombi ve Televizyon, günümüz evlerinde vazgeçilmez bir yer tutar. Ev aletleri, günlük yaşamı kolaylaştırarak konfor sunar. Bu nedenle, bu ürünlerin bakım ve onarımı büyük bir önem taşır. Özellikle buzdolabı, çamaşır makinesi ve bulaşık makinesi gibi cihazların sorunsuz çalışması, evdeki işlerin düzenli bir şekilde sürdürülmesini sağlar. Yüksek kaliteli beyaz eşya servisi ile, elektronik ev aletleri onarımı konusunda profesyonel yardım almak mümkündür. Bu hizmetler, kullanıcıların ihtiyaç duyduğu zamanlarda hızlı bir çözüm sunar.</p>
   <section id="makale">
     <h2>Hizmet Hakkında Makale</h2>
     <p itemprop="articleBody">[Buraya 10.000 kelimelik makale eklenecek. Şimdilik örnek uzun metin: Beyaz eşya servisi, buzdolabı, çamaşır makinesi, bulaşık makinesi, fırın, klima, kombi ve televizyon gibi cihazların tamir, bakım ve arıza hizmetlerini kapsar. Beyaz eşyalarınızın ömrünü uzatmak ve verimli çalışmasını sağlamak için düzenli bakım ve profesyonel servis hizmeti almak önemlidir. ...]</p>
@@ -81,15 +97,16 @@
 </main>
 <div id="footer"></div>
 <script>
-// Header ve footer'ı dinamik olarak yükle
-function includeHTML(id, url) {
-  fetch(url)
-    .then(res => res.text())
-    .then(html => { document.getElementById(id).innerHTML = html; })
-    .catch(() => {});
-}
-document.addEventListener('DOMContentLoaded', function() {
-  includeHTML('header', '/includes/header.html');
-  includeHTML('footer', '/includes/footer.html');
-});
+  window.addEventListener('DOMContentLoaded', function() {
+    fetch('/includes/header.html').then(r=>r.text()).then(html=>{
+      document.getElementById('header').innerHTML = html;
+      var s = document.createElement('script');
+      s.src = 'assets/js/header-menu.js';
+      document.body.appendChild(s);
+    });
+    fetch('/includes/footer.html').then(r=>r.text()).then(html=>{
+      document.getElementById('footer').innerHTML = html;
+    });
+  });
 </script>
+</html>
