@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+# Sitemap dosyanız varsa aşağıdaki satırı ekleyebilirsiniz:
+# Sitemap: https://www.orneksite.com/sitemap.xml 
