@@ -1,113 +1,96 @@
 <!DOCTYPE html>
 <html lang="tr">
-<div id="header"></div>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
-  <title id="dynamic-title">Hizmet</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Beyaz Eşya Servisi | İstanbul Teknik Servis</title>
+  <meta name="description" content="İstanbul’da buzdolabı, çamaşır ve bulaşık makinesi, fırın, klima, kombi ve televizyon için hızlı, güvenilir ve uygun fiyatlı beyaz eşya teknik servis hizmeti sunuyoruz.">
   <link rel="stylesheet" href="assets/css/style.css">
-  <meta name="description" id="dynamic-desc" content="Beyaz eşya servisi hizmetleri hakkında detaylı bilgi alın.">
-  <link rel="canonical" href="https://www.orneksite.com/service.html" />
-  <script>
-    // Dinamik başlık ve meta
-    function getQueryParam(name) {
-      const url = new URL(window.location.href);
-      return url.searchParams.get(name);
-    }
-    const service = getQueryParam('service') || 'Beyaz Eşya Servisi';
-    document.addEventListener('DOMContentLoaded', function() {
-      // SEO uyumlu title ve description
-      var title = service + ' | Beyaz Eşya Servisi - İstanbul Tamir, Bakım ve Arıza Hizmeti';
-      var desc = service + ' için İstanbul genelinde hızlı, güvenilir ve uygun fiyatlı tamir, bakım ve arıza hizmetleri. Profesyonel teknik servis, müşteri memnuniyeti ve kaliteli hizmet.';
-      document.getElementById('dynamic-h1').textContent = service;
-      document.getElementById('dynamic-title').textContent = title;
-      document.getElementById('dynamic-desc').setAttribute('content', desc);
-      document.title = title;
-    });
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://wp.serpsonic.com" },
-      { "@type": "ListItem", "position": 2, "name": "Beyaz Eşya Servisi, Buzdolabı, Çamaşır Makinesi, Bulaşık Makinesi, Fırın, Klima, Kombi Ve Televizyon", "item": "https://wp.serpsonic.com/Beyaz-Eya-Servisi-Buzdolab-amar-Makinesi-Bulak-Makinesi-Frn-Klima-Kombi-Ve-Televizyon" },
-      { "@type": "ListItem", "position": 3, "name": "1", "item": "https://wp.serpsonic.com/Beyaz-Eya-Servisi-Buzdolab-amar-Makinesi-Bulak-Makinesi-Frn-Klima-Kombi-Ve-Televizyon/1" },
-      { "@type": "ListItem", "position": 4, "name": "Buzdolabı Servisi Çağırmadan Önce Yapılması Gereken Kontroller", "item": "https://wp.serpsonic.com/Beyaz-Eya-Servisi-Buzdolab-amar-Makinesi-Bulak-Makinesi-Frn-Klima-Kombi-Ve-Televizyon/Buzdolab-Servisi-armadan-nce-Yaplmas-Gereken-Kontroller" },
-      { "@type": "ListItem", "position": 5, "name": "2", "item": "https://wp.serpsonic.com/Beyaz-Eya-Servisi-Buzdolab-amar-Makinesi-Bulak-Makinesi-Frn-Klima-Kombi-Ve-Televizyon/2" },
-      { "@type": "ListItem", "position": 6, "name": "Çamaşır Makinesi Tamiri: En Sık Karşılaşılan Arızalar ve Çözümleri", "item": "https://wp.serpsonic.com/Beyaz-Eya-Servisi-Buzdolab-amar-Makinesi-Bulak-Makinesi-Frn-Klima-Kombi-Ve-Televizyon/amar-Makinesi-Tamiri-En-Sk-Karlalan-Arzalar-ve-zmleri" },
-      { "@type": "ListItem", "position": 7, "name": "3", "item": "https://wp.serpsonic.com/Beyaz-Eya-Servisi-Buzdolab-amar-Makinesi-Bulak-Makinesi-Frn-Klima-Kombi-Ve-Televizyon/3" },
-      { "@type": "ListItem", "position": 8, "name": "Bulaşık Makinesi Servisi: Su Akıtma Sorununa Ne İyi Gelir?", "item": "https://wp.serpsonic.com/Beyaz-Eya-Servisi-Buzdolab-amar-Makinesi-Bulak-Makinesi-Frn-Klima-Kombi-Ve-Televizyon/Bulak-Makinesi-Servisi-Su-Aktma-Sorununa-Ne-yi-Gelir" },
-      { "@type": "ListItem", "position": 9, "name": "4", "item": "https://wp.serpsonic.com/Beyaz-Eya-Servisi-Buzdolab-amar-Makinesi-Bulak-Makinesi-Frn-Klima-Kombi-Ve-Televizyon/4" },
-      { "@type": "ListItem", "position": 10, "name": "Fırın Tamiri: Isıtmama Problemi Nasıl Giderilir?", "item": "https://wp.serpsonic.com/Beyaz-Eya-Servisi-Buzdolab-amar-Makinesi-Bulak-Makinesi-Frn-Klima-Kombi-Ve-Televizyon/Frn-Tamiri-Istmama-Problemi-Nasl-Giderilir" }
-      // ... diğer adımlarınızı da ekleyin
-    ]
-  }
-  </script>
 </head>
-<main style="max-width:900px;margin:32px auto 0 auto;padding:0 16px;font-family:Arial,sans-serif;">
-  <style>
-    @media (max-width:600px) {
-      main { padding: 0 4vw; font-size: 15px; }
-      main h1, main h2 { font-size: 1.3em; }
-      #makale, #yorumlar { padding: 0; }
-      #yorumlar ul { grid-template-columns: 1fr !important; }
-    }
-    main h1 { color:#1976d2; font-size:2.1em; margin-bottom:8px; }
-    main h2 { color:#1565c0; font-size:1.3em; margin-top:32px; }
-    #makale, #yorumlar {
-      background:#fff; border-radius:12px; box-shadow:0 2px 12px #0001; 
-      padding:24px 8px; margin:24px 0; 
-      max-width:700px; margin-left:auto; margin-right:auto;
-    }
-    #yorumlar ul {
-      display:grid; grid-template-columns: 1fr 1fr; gap:18px; padding:0; margin:0; list-style:none;
-      max-width:700px; margin:0 auto;
-    }
-    @media (max-width:900px) {
-      #yorumlar ul { grid-template-columns: 1fr; }
-    }
-    #yorumlar li { background:#bbdefb; border-radius:12px; padding:18px 16px; box-shadow:0 2px 8px #0001; display:flex; flex-direction:column; justify-content:space-between; min-height:110px; }
-    #yorumlar li span[itemprop="reviewBody"] { color:#0d47a1; font-weight:600; font-size:1.08em; margin-bottom:10px; display:block; }
-    #yorumlar li span[itemprop="author"],
-    #yorumlar li .review-author { color:#111; font-size:0.92em; font-weight:400; margin-top:4px; align-self:center; display:block; text-align:center; }
-  </style>
-  <h1 id="dynamic-h1" itemprop="name">Hizmet</h1>
-  <div style="text-align:center;margin:18px 0 24px 0;">
-    <div class="vurgulu-servis-yazi" style="font-size:11px;font-weight:500;background:#fff;border-radius:16px;padding:16px 14px 14px 14px;box-shadow:0 2px 12px #0001;letter-spacing:0.01em;line-height:1.6;color:#1976d2;margin-bottom:12px;font-family:'Montserrat',Arial,sans-serif;">
-      <span style="font-weight:bold; text-transform:uppercase;">HER MARKA VE MODEL BEYAZ EŞYA İÇİN</span> <span style="font-weight:bold; text-transform:uppercase;">HIZLI</span> ve <span style="font-weight:bold; text-transform:uppercase;">GÜVENİLİR</span><br>
-      <span style="font-weight:bold; text-transform:uppercase;">PROFESYONEL SERVİS HİZMETİ</span>
-    </div>
-    <a href="tel:05551234567" class="footer-tel-btn" style="display:inline-block;background:#1976d2;color:#fff;font-weight:bold;border:none;border-radius:8px;padding:18px 40px;font-size:24px;box-shadow:0 2px 8px #0001;transition:background .2s;text-decoration:none;">Şimdi Ara: 0555 123 45 67</a>
+<body>
+  <div id="header"></div>
+  <div class="hero-section">
+    <picture>
+      <source srcset="assets/img/beyaz-esya-hero-400x100.webp 400w, assets/img/beyaz-esya-hero-900x220.webp 900w" sizes="(max-width: 600px) 400px, 900px" type="image/webp">
+      <source srcset="assets/img/beyaz-esya-hero-900x220.jpg 900w, assets/img/beyaz-esya-hero-600x147.jpg 600w" sizes="(max-width: 600px) 600px, 900px" type="image/jpeg">
+      <img src="assets/img/beyaz-esya-hero-900x220.jpg" alt="Beyaz Eşya Servisi" width="900" height="220">
+    </picture>
   </div>
-  <p id="dynamic-summary" itemprop="description">[Buraya dinamik olarak özet eklenebilir]</p>
-  <p>Beyaz Eşya Servisi, Buzdolabı, Çamaşır Makinesi, Bulaşık Makinesi, Fırın, Klima, Kombi ve Televizyon, günümüz evlerinde vazgeçilmez bir yer tutar. Ev aletleri, günlük yaşamı kolaylaştırarak konfor sunar. Bu nedenle, bu ürünlerin bakım ve onarımı büyük bir önem taşır. Özellikle buzdolabı, çamaşır makinesi ve bulaşık makinesi gibi cihazların sorunsuz çalışması, evdeki işlerin düzenli bir şekilde sürdürülmesini sağlar. Yüksek kaliteli beyaz eşya servisi ile, elektronik ev aletleri onarımı konusunda profesyonel yardım almak mümkündür. Bu hizmetler, kullanıcıların ihtiyaç duyduğu zamanlarda hızlı bir çözüm sunar.</p>
-  <section id="makale">
-    <h2>Hizmet Hakkında Makale</h2>
-    <p itemprop="articleBody">[Buraya 10.000 kelimelik makale eklenecek. Şimdilik örnek uzun metin: Beyaz eşya servisi, buzdolabı, çamaşır makinesi, bulaşık makinesi, fırın, klima, kombi ve televizyon gibi cihazların tamir, bakım ve arıza hizmetlerini kapsar. Beyaz eşyalarınızın ömrünü uzatmak ve verimli çalışmasını sağlamak için düzenli bakım ve profesyonel servis hizmeti almak önemlidir. ...]</p>
-  </section>
-  <section id="yorumlar" itemscope itemtype="https://schema.org/Review">
-    <h2>Müşteri Yorumları</h2>
-    <ul>
-      <li itemprop="review"><span class="yorum-icon"> <svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="10" rx="2"/></svg> </span><span itemprop="reviewBody">Çok hızlı ve güvenilir bir servis, teşekkürler!</span><span class="review-author"><span class="author-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 16-4 16 0"/></svg></span>Ayşe K.</span></li>
-      <li itemprop="review"><span class="yorum-icon"> <svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="10" rx="2"/></svg> </span><span itemprop="reviewBody">Uygun fiyat ve kaliteli hizmet.</span><span class="review-author"><span class="author-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 16-4 16 0"/></svg></span>Mehmet T.</span></li>
-      <li itemprop="review"><span class="yorum-icon"> <svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="10" rx="2"/></svg> </span><span itemprop="reviewBody">Usta çok ilgiliydi, sorunum hemen çözüldü.</span><span class="review-author"><span class="author-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 16-4 16 0"/></svg></span>Ali S.</span></li>
-      <li itemprop="review"><span class="yorum-icon"> <svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="10" rx="2"/></svg> </span><span itemprop="reviewBody">Çalışanlar çok nazik ve profesyonel.</span><span class="review-author"><span class="author-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 16-4 16 0"/></svg></span>Fatma L.</span></li>
-    </ul>
-  </section>
-</main>
-<div id="footer"></div>
-<script>
-  window.addEventListener('DOMContentLoaded', function() {
-    fetch('/includes/header.html').then(r=>r.text()).then(html=>{
-      document.getElementById('header').innerHTML = html;
-      var s = document.createElement('script');
-      s.src = 'assets/js/header-menu.js';
-      document.body.appendChild(s);
+  <main style="max-width:900px;margin:32px auto 0 auto;padding:0 16px;font-family:Arial,sans-serif;">
+    <h1>Beyaz Eşya Servisi</h1>
+    <h2>İstanbul'un En İyi Beyaz Eşya Tamir, Bakım ve Onarım Hizmeti</h2>
+    <div class="social-share" style="margin-bottom:16px;">
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.servisdeneme.netlify.app/service.html" target="_blank" rel="noopener">Facebook'ta Paylaş</a> |
+      <a href="https://twitter.com/intent/tweet?url=https://www.servisdeneme.netlify.app/service.html&text=Beyaz%20Eşya%20Servisi" target="_blank" rel="noopener">Twitter'da Paylaş</a>
+    </div>
+    <div style="text-align:center;margin:18px 0 24px 0;">
+      <div class="vurgulu-servis-yazi" style="font-size:11px;font-weight:500;background:#fff;border-radius:16px;padding:16px 14px 14px 14px;box-shadow:0 2px 12px #0001;letter-spacing:0.01em;line-height:1.6;color:#1976d2;margin-bottom:12px;font-family:'Montserrat',Arial,sans-serif;">
+        <span style="font-weight:bold; text-transform:uppercase;">HER MARKA VE MODEL BEYAZ EŞYA İÇİN HIZLI ve GÜVENİLİR PROFESYONEL SERVİS HİZMETİ</span> <br>
+      </div>
+      <a href="tel:05551234567" class="footer-tel-btn" style="display:inline-block;background:#064d1a;color:#fff;font-weight:bold;border:none;border-radius:16px;padding:18px 36px;font-size:20px;box-shadow:0 2px 12px #0002;margin:0;">
+        <img src="assets/img/favicon-call-32x32.png" alt="Ara" width="22" height="22" style="vertical-align:middle;margin-right:8px;filter:brightness(0) invert(1);">
+        Şimdi Ara: 0555 123 45 67
+      </a>
+    </div>
+    <p>Buzdolabı, çamaşır makinesi, bulaşık makinesi, fırın, klima, kombi ve televizyon için profesyonel teknik servis hizmeti sunuyoruz. İstanbul genelinde hızlı, güvenilir ve uygun fiyatlı çözümler için bize ulaşın.</p>
+    <section class="hizmetler-ikon-ozet" style="max-width:600px;margin:0 auto 32px auto;display:grid;grid-template-columns:1fr 1fr;gap:24px 18px;justify-items:center;align-items:start;">
+      <div class="hizmet-ikon-kutu" style="text-align:center;">
+        <div style="font-size:2.2em;">❤️</div>
+        <div style="font-weight:bold;font-size:1.1em;margin-top:8px;">Müşteri Memnuniyeti</div>
+        <div style="font-size:.98em;color:#444;margin-top:4px;">Her zaman müşteri odaklı, güler yüzlü ve çözüm odaklı hizmet sunuyoruz.</div>
+      </div>
+      <div class="hizmet-ikon-kutu" style="text-align:center;">
+        <div style="font-size:2.2em;">📞</div>
+        <div style="font-weight:bold;font-size:1.1em;margin-top:8px;">7/24 İletişim</div>
+        <div style="font-size:.98em;color:#444;margin-top:4px;">Günün her saati bize ulaşabilir, hızlıca destek alabilirsiniz.</div>
+      </div>
+      <div class="hizmet-ikon-kutu" style="text-align:center;">
+        <div style="font-size:2.2em;">🔧</div>
+        <div style="font-weight:bold;font-size:1.1em;margin-top:8px;">Uzman Teknik Ekip</div>
+        <div style="font-size:.98em;color:#444;margin-top:4px;">Deneyimli ve eğitimli teknik ekibimizle güvenilir servis hizmeti.</div>
+      </div>
+      <div class="hizmet-ikon-kutu" style="text-align:center;">
+        <div style="font-size:2.2em;">⏱</div>
+        <div style="font-weight:bold;font-size:1.1em;margin-top:8px;">Hızlı Servis</div>
+        <div style="font-size:.98em;color:#444;margin-top:4px;">Arızalara en kısa sürede müdahale, hızlı ve etkili çözüm.</div>
+      </div>
+    </section>
+    <section id="makale" style="background:#fff;border-radius:12px;box-shadow:0 2px 12px #0001;padding:24px 18px;margin:24px 0;">
+      <h2>Beyaz Eşya Servis Hizmeti</h2>
+      <h3>Beyaz Eşya Servislerinde Dikkat Edilmesi Gerekenler</h3>
+      <p>Beyaz eşya servisleri, modern yaşamın vazgeçilmez bir parçası haline gelmiştir. Evlerimizde kullandığımız buzdolabı, çamaşır makinesi, bulaşık makinesi, fırın, klima, kombi ve televizyon gibi cihazlar, günlük hayatı kolaylaştırırken zaman zaman arıza veya bakım ihtiyacı doğurur. İşte bu noktada profesyonel beyaz eşya servisleri devreye girer. Uzman teknik ekipler tarafından sunulan hızlı ve güvenilir servis hizmetleri, hem cihazların ömrünü uzatır hem de kullanıcıların konforunu artırır.</p>
+      <h3>Servis Seçiminde Nelere Dikkat Edilmeli?</h3>
+      <p>Beyaz eşya servisi seçerken dikkat edilmesi gereken en önemli unsurlardan biri, firmanın deneyimi ve teknik altyapısıdır. Sertifikalı ve eğitimli teknisyenler, arızaların doğru şekilde tespit edilmesini ve kalıcı çözümler sunulmasını sağlar. Ayrıca, orijinal yedek parça kullanımı ve garanti kapsamı, servis kalitesini belirleyen diğer önemli faktörlerdendir. İstanbul gibi büyük şehirlerde, 7/24 ulaşılabilen ve hızlı müdahale sağlayan beyaz eşya servisleri, kullanıcıların acil ihtiyaçlarına anında çözüm sunar.</p>
+      <h3>Düzenli Bakımın Önemi</h3>
+      <p>Düzenli bakım, beyaz eşyaların performansını artırırken enerji tasarrufu da sağlar. Özellikle buzdolabı, çamaşır makinesi ve bulaşık makinesi gibi sık kullanılan cihazlarda, periyodik kontroller sayesinde olası arızaların önüne geçilebilir. Bu da hem maliyetleri düşürür hem de cihazların daha uzun süre verimli çalışmasını sağlar. Beyaz eşya servisleri, sadece arıza durumunda değil, bakım ve temizlik işlemlerinde de profesyonel destek sunar.</p>
+      <h3>SEO Açısından Beyaz Eşya Servisleri</h3>
+      <p>SEO açısından bakıldığında, "beyaz eşya servisi", "beyaz eşya tamiri", "beyaz eşya bakımı" gibi anahtar kelimeler, kullanıcıların en çok aradığı terimler arasında yer alır. Bu nedenle, beyaz eşya servisleriyle ilgili içeriklerin özgün, bilgilendirici ve kullanıcı odaklı olması büyük önem taşır. Müşteri memnuniyeti, hızlı servis, uygun fiyat ve garantili hizmet gibi avantajlar, beyaz eşya servisi arayanların tercih sebeplerinin başında gelir.</p>
+      <h3>Sonuç</h3>
+      <p>Sonuç olarak, beyaz eşya servisleri; güvenilirlik, uzmanlık ve hızlı çözüm sunma açısından ev sahiplerinin en büyük yardımcılarından biridir. Cihazlarınızda yaşadığınız her türlü arıza, bakım veya temizlik ihtiyacında, alanında uzman bir beyaz eşya servisi ile çalışmak, hem cihazlarınızın ömrünü uzatır hem de günlük yaşamınızın aksamadan devam etmesini sağlar. Unutmayın, düzenli bakım ve profesyonel destek ile beyaz eşyalarınızdan maksimum verim alabilirsiniz.</p>
+    </section>
+    <section id="yorumlar" itemscope itemtype="https://schema.org/Review">
+      <h2>Müşteri Yorumları</h2>
+      <ul>
+        <li itemprop="review"><span class="yorum-icon"> <svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="10" rx="2"/></svg> </span><span itemprop="reviewBody">Çok hızlı ve güvenilir bir servis, teşekkürler!</span><span class="review-author"><span class="author-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 16-4 16 0"/></svg></span>Ayşe K.</span></li>
+        <li itemprop="review"><span class="yorum-icon"> <svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="10" rx="2"/></svg> </span><span itemprop="reviewBody">Uygun fiyat ve kaliteli hizmet.</span><span class="review-author"><span class="author-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 16-4 16 0"/></svg></span>Mehmet T.</span></li>
+        <li itemprop="review"><span class="yorum-icon"> <svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="10" rx="2"/></svg> </span><span itemprop="reviewBody">Usta çok ilgiliydi, sorunum hemen çözüldü.</span><span class="review-author"><span class="author-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 16-4 16 0"/></svg></span>Ali S.</span></li>
+        <li itemprop="review"><span class="yorum-icon"> <svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="10" rx="2"/></svg> </span><span itemprop="reviewBody">Çalışanlar çok nazik ve profesyonel.</span><span class="review-author"><span class="author-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 16-4 16 0"/></svg></span>Fatma L.</span></li>
+      </ul>
+    </section>
+  </main>
+  <div id="footer"></div>
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      fetch('includes/header.html').then(r=>r.text()).then(html=>{
+        document.getElementById('header').innerHTML = html;
+        var s = document.createElement('script');
+        s.src = 'assets/js/header-menu.js';
+        document.body.appendChild(s);
+      });
+      fetch('includes/footer.html').then(r=>r.text()).then(html=>{
+        document.getElementById('footer').innerHTML = html;
+      });
     });
-    fetch('/includes/footer.html').then(r=>r.text()).then(html=>{
-      document.getElementById('footer').innerHTML = html;
-    });
-  });
-</script>
+  </script>
+</body>
 </html>
