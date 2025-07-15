@@ -301,3 +301,20 @@ a[href^="tel:"]:focus {
   place-items: center;
   width: 100%;
 } 
+.footer-tel-btn, #floating-search-btn {
+  display: inline-grid !important;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  gap: 10px;
+  min-height: 48px;
+  min-width: 220px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  padding: 0 24px;
+  margin-left: auto;
+  margin-right: auto;
+} 
