@@ -21,3 +21,61 @@ nav ul li a:focus,
   background: #222 !important;
   text-decoration: underline !important;
 } 
+/* --- KONTRAST DÜZELTMELERİ BAŞLANGIÇ --- */
+
+/* Menü barı ve başlık için kontrastlı renkler */
+.header-bar, .modern-header, .modern-menu {
+  background: #1976d2 !important;
+}
+.site-title, .header-bar, .modern-menu li a, .modern-menu li a:visited {
+  color: #fff !important;
+}
+
+/* Menü hover ve focus durumunda kontrast */
+.modern-menu li a:hover, .modern-menu li a:focus {
+  background: #1565c0 !important;
+  color: #fff !important;
+}
+
+/* Mobil menüde de kontrastı koru */
+@media (max-width:800px) {
+  .modern-menu {
+    background: #1976d2 !important;
+  }
+  .modern-menu li a {
+    color: #fff !important;
+  }
+}
+
+/* Butonlar ve çağrı alanları için kontrast */
+button, .btn, .footer-tel-btn, a[href^="tel:"] {
+  background: #1976d2 !important;
+  color: #fff !important;
+  font-weight: bold;
+}
+button:hover, .btn:hover, .footer-tel-btn:hover, a[href^="tel:"]:hover {
+  background: #1565c0 !important;
+  color: #fff !important;
+}
+
+/* Alt menü (submenu) linkleri için kontrast */
+.modern-menu .submenu li a {
+  color: #1976d2 !important;
+  background: #fff !important;
+}
+.modern-menu .submenu li a:hover {
+  background: #e3f2fd !important;
+  color: #1976d2 !important;
+}
+
+/* Genel linkler için kontrast (açık arka planda koyu mavi) */
+a, a:visited {
+  color: #0d47a1 !important;
+  background: none !important;
+}
+a:hover, a:focus {
+  color: #C00 !important;
+  background: #e3f2fd !important;
+}
+
+/* --- KONTRAST DÜZELTMELERİ BİTİŞ --- */ 
