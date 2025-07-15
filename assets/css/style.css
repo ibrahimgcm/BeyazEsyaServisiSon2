@@ -194,7 +194,7 @@ a[style*="background: #1565c0"]:focus {
 .footer-tel-btn,
 a[href^="tel:"],
 #floating-search-btn {
-  background: #146b2f !important; /* koyu yeşil */
+  background: #064d1a !important; /* koyu yeşil */
   color: #fff !important;
   font-weight: bold;
   border: none;
@@ -205,7 +205,7 @@ a[href^="tel:"]:hover,
 .footer-tel-btn:focus,
 a[href^="tel:"]:focus,
 #floating-search-btn:focus {
-  background: #0e4d22 !important; /* daha koyu yeşil */
+  background: #043d14 !important; /* daha koyu yeşil */
   color: #fff !important;
 }
 /* --- ŞİMDİ ARA BUTONLARI RENK DÜZENLEMESİ BİTİŞ --- */ 
