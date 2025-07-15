@@ -6,9 +6,8 @@
   <picture>
     <source srcset="assets/img/beyaz-esya-hero-900x220.webp 900w, assets/img/beyaz-esya-hero-600x147.webp 600w" sizes="(max-width: 600px) 600px, 900px" type="image/webp">
     <source srcset="assets/img/beyaz-esya-hero-900x220.jpg 900w, assets/img/beyaz-esya-hero-600x147.jpg 600w" sizes="(max-width: 600px) 600px, 900px" type="image/jpeg">
-    <img src="assets/img/beyaz-esya-hero-900x220.jpg" alt="Beyaz Eşya Servisi" width="900" height="220" loading="lazy">
+    <img src="assets/img/beyaz-esya-hero-900x220.jpg" alt="Beyaz Eşya Servisi" width="900" height="220">
   </picture>
-  <div class="hero-title">Beyaz Eşya Servisi</div>
 </div>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,6 +20,7 @@
         document.getElementById('header').innerHTML = html;
         var s = document.createElement('script');
         s.src = 'assets/js/header-menu.js';
+        s.defer = true; // Add defer attribute
         document.body.appendChild(s);
       });
       fetch('includes/footer.html').then(r=>r.text()).then(html=>{
