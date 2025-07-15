@@ -7,6 +7,12 @@ body {
   min-width: 320px;
   min-height: 100vh;
   overflow-x: hidden;
+  font-size: 14px;
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
 }
 main {
   min-height: 500px;
