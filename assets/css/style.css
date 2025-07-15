@@ -342,3 +342,11 @@ a[href^="tel:"]:focus {
   border-radius: 50px;
   transition: background .2s, box-shadow .2s;
 } 
+.footer-tel-btn span, #floating-search-btn span {
+  flex: 1 1 0;
+  text-align: center;
+  display: block;
+  width: 100%;
+  white-space: normal;
+  word-break: break-word;
+} 
