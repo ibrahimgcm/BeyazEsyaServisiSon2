@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
 }
 main {
-  min-height: 400px;
+  min-height: 500px;
   transition: margin 0.2s, padding 0.2s;
 }
 .hero-section img {
@@ -146,4 +146,21 @@ body{background:#fff;color:#222;font-family:Arial,Helvetica,sans-serif;margin:0;
     padding: 12px 18px 12px 14px;
     font-size: 1em;
   }
+} 
+#header {
+  min-height: 80px;
+}
+#footer {
+  min-height: 120px;
+}
+.skeleton {
+  height: 200px;
+  background: #eee;
+  border-radius: 8px;
+  animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
 } 
