@@ -79,3 +79,52 @@ a:hover, a:focus {
 }
 
 /* --- KONTRAST DÜZELTMELERİ BİTİŞ --- */ 
+/* --- KONTRAST DÜZELTMELERİ GÜNCELLEME --- */
+
+/* Menüde koyu arka plan üzerinde beyaz metin */
+.header-bar,
+.modern-header,
+.modern-menu {
+  background: #1976d2 !important;
+}
+.modern-menu li a,
+.modern-menu li a:visited {
+  color: #fff !important;
+  background: transparent !important;
+}
+.modern-menu li a:hover,
+.modern-menu li a:focus {
+  background: #1565c0 !important;
+  color: #fff !important;
+}
+
+/* Footer ve footer menüde beyaz metin */
+footer,
+footer a,
+footer .footer-menu li a {
+  background: #222 !important;
+  color: #fff !important;
+}
+footer a:hover,
+footer .footer-menu li a:hover {
+  background: #1565c0 !important;
+  color: #fff !important;
+}
+
+/* Alt menü (submenu) linkleri için kontrast */
+.modern-menu .submenu li a {
+  color: #1976d2 !important;
+  background: #fff !important;
+}
+.modern-menu .submenu li a:hover {
+  background: #e3f2fd !important;
+  color: #1976d2 !important;
+}
+
+/* Genel linkler (açık arka planda) */
+body a:not(nav a):not(.modern-menu li a):not(footer a):not(.footer-menu li a) {
+  color: #0d47a1 !important;
+  background: none !important;
+}
+
+/* --- KONTRAST DÜZELTMELERİ GÜNCELLEME BİTİŞ --- */ 
