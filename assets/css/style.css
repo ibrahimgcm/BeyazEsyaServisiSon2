@@ -190,3 +190,24 @@ a[style*="background: #1565c0"]:focus {
   box-shadow: 0 4px 16px #0002;
 }
 /* --- MAVİ BUTON VE LİNKLERİ DE KOYU YEŞİL YAP BİTİŞ --- */ 
+/* --- ARAMA BUTONU (Şimdi Ara) KOYU YEŞİL --- */
+.footer-tel-btn,
+a[href^="tel:"] {
+  background: #20613a !important;
+  color: #fff !important;
+  border: none !important;
+  font-weight: bold;
+  border-radius: 6px !important;
+  box-shadow: 0 2px 8px #0001;
+  transition: background .2s, box-shadow .2s;
+  text-decoration: none !important;
+}
+.footer-tel-btn:hover,
+a[href^="tel:"]:hover,
+.footer-tel-btn:focus,
+a[href^="tel:"]:focus {
+  background: #174d2a !important;
+  color: #fff !important;
+  box-shadow: 0 4px 16px #0002;
+}
+/* --- ARAMA BUTONU (Şimdi Ara) KOYU YEŞİL BİTİŞ --- */ 
