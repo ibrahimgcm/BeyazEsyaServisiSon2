@@ -190,6 +190,25 @@ a[style*="background: #1565c0"]:focus {
   box-shadow: 0 4px 16px #0002;
 }
 /* --- MAVİ BUTON VE LİNKLERİ DE KOYU YEŞİL YAP BİTİŞ --- */ 
+/* --- ŞİMDİ ARA BUTONLARI RENK DÜZENLEMESİ BAŞLANGIÇ --- */
+.footer-tel-btn,
+a[href^="tel:"],
+#floating-search-btn {
+  background: #146b2f !important; /* koyu yeşil */
+  color: #fff !important;
+  font-weight: bold;
+  border: none;
+}
+.footer-tel-btn:hover,
+a[href^="tel:"]:hover,
+#floating-search-btn:hover,
+.footer-tel-btn:focus,
+a[href^="tel:"]:focus,
+#floating-search-btn:focus {
+  background: #0e4d22 !important; /* daha koyu yeşil */
+  color: #fff !important;
+}
+/* --- ŞİMDİ ARA BUTONLARI RENK DÜZENLEMESİ BİTİŞ --- */ 
 /* --- ARAMA BUTONU (Şimdi Ara) KOYU YEŞİL --- */
 .footer-tel-btn,
 a[href^="tel:"] {
