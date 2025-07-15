@@ -29,7 +29,11 @@
   </script>
   <!-- Hero Section: Mobilde ilk ekranda gözükecek görsel ve başlık -->
   <div class="hero-section">
-    <img src="assets/img/beyaz-esya-hero.jpg" alt="Beyaz Eşya Servisi" loading="lazy" width="900" height="220">
+    <picture>
+      <source srcset="assets/img/beyaz-esya-hero-900x220.webp 900w, assets/img/beyaz-esya-hero-600x147.webp 600w" sizes="(max-width: 600px) 600px, 900px" type="image/webp">
+      <source srcset="assets/img/beyaz-esya-hero-900x220.jpg 900w, assets/img/beyaz-esya-hero-600x147.jpg 600w" sizes="(max-width: 600px) 600px, 900px" type="image/jpeg">
+      <img src="assets/img/beyaz-esya-hero-900x220.jpg" alt="Beyaz Eşya Servisi" width="900" height="220" loading="lazy">
+    </picture>
     <div class="hero-title">Beyaz Eşya Servisi</div>
   </div>
   <main style="max-width:900px;margin:32px auto 0 auto;padding:0 16px;font-family:Arial,sans-serif;">
