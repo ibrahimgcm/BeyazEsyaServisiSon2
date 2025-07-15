@@ -102,11 +102,11 @@ body{background:#fff;color:#222;font-family:Arial,Helvetica,sans-serif;margin:0;
   font-weight: bold;
   font-size: 1.1em;
   margin-top: 8px;
-  color: #1976d2;
+  color: #0d47a1;
 }
 .hizmet-ikon-kutu div:nth-child(3) {
   font-size: .98em;
-  color: #444;
+  color: #111;
   margin-top: 4px;
 }
 @media (max-width: 600px) {
