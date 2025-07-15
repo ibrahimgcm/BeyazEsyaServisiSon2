@@ -350,3 +350,13 @@ a[href^="tel:"]:focus {
   white-space: normal;
   word-break: break-word;
 } 
+.footer-tel-btn {
+  max-width: 420px;
+  padding: 14px 18px;
+  font-size: 1.08em;
+  white-space: nowrap;
+  gap: 8px;
+}
+.footer-tel-btn img {
+  margin-right: 6px !important;
+} 
