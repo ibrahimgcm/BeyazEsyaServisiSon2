@@ -230,3 +230,12 @@ a[href^="tel:"]:focus {
   box-shadow: 0 4px 16px #0002;
 }
 /* --- ARAMA BUTONU (Şimdi Ara) KOYU YEŞİL BİTİŞ --- */ 
+#floating-search-btn,
+#floating-search-btn span {
+  color: #fff !important;
+} 
+.review-author {
+  display: grid;
+  place-items: center;
+  width: 100%;
+} 
