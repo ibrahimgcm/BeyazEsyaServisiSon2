@@ -128,10 +128,11 @@ body a:not(nav a):not(.modern-menu li a):not(footer a):not(.footer-menu li a) {
 }
 
 /* --- KONTRAST DÜZELTMELERİ GÜNCELLEME BİTİŞ --- */ 
-/* --- ARAMA BUTONLARI KOYU YEŞİL --- */
+/* --- ARAMA VE TÜM BUTONLARDA KOYU YEŞİL --- */
 button[type="submit"],
 input[type="submit"],
-.search-btn {
+.btn,
+button {
   background: #20613a !important;
   color: #fff !important;
   border: none !important;
@@ -142,12 +143,50 @@ input[type="submit"],
 }
 button[type="submit"]:hover,
 input[type="submit"]:hover,
-.search-btn:hover,
+.btn:hover,
+button:hover,
 button[type="submit"]:focus,
 input[type="submit"]:focus,
-.search-btn:focus {
+.btn:focus,
+button:focus {
   background: #174d2a !important;
   color: #fff !important;
   box-shadow: 0 4px 16px #0002;
 }
-/* --- ARAMA BUTONLARI KOYU YEŞİL BİTİŞ --- */ 
+/* --- ARAMA VE TÜM BUTONLARDA KOYU YEŞİL BİTİŞ --- */ 
+/* --- MAVİ BUTON VE LİNKLERİ DE KOYU YEŞİL YAP --- */
+.footer-tel-btn,
+.search-btn,
+.btn,
+a[style*="background:#1976d2"],
+a[style*="background: #1976d2"],
+a[style*="background:#1565c0"],
+a[style*="background: #1565c0"] {
+  background: #20613a !important;
+  color: #fff !important;
+  border: none !important;
+  font-weight: bold;
+  border-radius: 6px !important;
+  box-shadow: 0 2px 8px #0001;
+  transition: background .2s, box-shadow .2s;
+  text-decoration: none !important;
+}
+.footer-tel-btn:hover,
+.search-btn:hover,
+.btn:hover,
+a[style*="background:#1976d2"]:hover,
+a[style*="background: #1976d2"]:hover,
+a[style*="background:#1565c0"]:hover,
+a[style*="background: #1565c0"]:hover,
+.footer-tel-btn:focus,
+.search-btn:focus,
+.btn:focus,
+a[style*="background:#1976d2"]:focus,
+a[style*="background: #1976d2"]:focus,
+a[style*="background:#1565c0"]:focus,
+a[style*="background: #1565c0"]:focus {
+  background: #174d2a !important;
+  color: #fff !important;
+  box-shadow: 0 4px 16px #0002;
+}
+/* --- MAVİ BUTON VE LİNKLERİ DE KOYU YEŞİL YAP BİTİŞ --- */ 
