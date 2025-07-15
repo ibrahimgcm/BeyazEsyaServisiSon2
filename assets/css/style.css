@@ -128,3 +128,26 @@ body a:not(nav a):not(.modern-menu li a):not(footer a):not(.footer-menu li a) {
 }
 
 /* --- KONTRAST DÜZELTMELERİ GÜNCELLEME BİTİŞ --- */ 
+/* --- ARAMA BUTONLARI KOYU YEŞİL --- */
+button[type="submit"],
+input[type="submit"],
+.search-btn {
+  background: #20613a !important;
+  color: #fff !important;
+  border: none !important;
+  font-weight: bold;
+  border-radius: 6px !important;
+  box-shadow: 0 2px 8px #0001;
+  transition: background .2s, box-shadow .2s;
+}
+button[type="submit"]:hover,
+input[type="submit"]:hover,
+.search-btn:hover,
+button[type="submit"]:focus,
+input[type="submit"]:focus,
+.search-btn:focus {
+  background: #174d2a !important;
+  color: #fff !important;
+  box-shadow: 0 4px 16px #0002;
+}
+/* --- ARAMA BUTONLARI KOYU YEŞİL BİTİŞ --- */ 
