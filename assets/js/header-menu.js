@@ -60,6 +60,24 @@ function setupHeaderMenu() {
   attachMenuLinkEvents();
 }
 
+// SEO dostu hizmet linklerini dinamik parametreli URL'ye yönlendir
+// Hem .main-nav hem .dropdown-content içindeki /hizmet/ ile başlayan linkler için
+
+document.querySelectorAll('.main-nav a[href^="/hizmet/"], .dropdown-content a[href^="/hizmet/"]').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var href = link.getAttribute('href');
+    // /hizmet/xyz.html veya hizmet/xyz.html formatını yakala
+    var match = href.match(/\/?hizmet\/([^.\/]+)\.html$/);
+    if (match) {
+      e.preventDefault();
+      var service = match[1]
+        .replace(/-/g, ' ') // tireleri boşluğa çevir
+        .replace(/\b\w/g, function(l) { return l.toUpperCase(); }); // baş harfleri büyüt
+      window.location.href = 'hizmet.html?service=' + encodeURIComponent(service);
+    }
+  });
+});
+
 if (window.setupHeaderMenuLoaded !== true) {
   window.setupHeaderMenuLoaded = true;
   setTimeout(function() {
