@@ -69,4 +69,29 @@
   </section>
 </main>
 <div id="footer"></div>
+<!-- Sabit Arama Butonu Başlangıç -->
+<button id="floating-search-btn" style="display:none;position:fixed;bottom:24px;right:24px;z-index:9999;background:#1976d2;color:#fff;border:none;border-radius:50px;padding:16px 28px 16px 20px;box-shadow:0 4px 16px #0002;font-size:1.15em;font-weight:600;align-items:center;gap:10px;cursor:pointer;transition:background .2s,box-shadow .2s;">
+  <span style="font-size:1.3em;vertical-align:middle;">🔍</span> <span style="vertical-align:middle;">Arama</span>
+</button>
+<script>
+window.addEventListener('scroll', function() {
+  var mainBtn = document.querySelector('.footer-tel-btn');
+  var floatBtn = document.getElementById('floating-search-btn');
+  if (!mainBtn || !floatBtn) return;
+  var rect = mainBtn.getBoundingClientRect();
+  // Eğer ana buton ekranda görünmüyorsa sabit butonu göster
+  if (rect.bottom < 0 || rect.top > window.innerHeight) {
+    floatBtn.style.display = 'flex';
+  } else {
+    floatBtn.style.display = 'none';
+  }
+});
+// İsteğe bağlı: Sabit butona tıklanınca sayfanın başındaki arama/telefon butonuna kaydır
+
+document.getElementById('floating-search-btn').onclick = function() {
+  var mainBtn = document.querySelector('.footer-tel-btn');
+  if (mainBtn) mainBtn.scrollIntoView({behavior:'smooth',block:'center'});
+};
+</script>
+<!-- Sabit Arama Butonu Bitiş -->
 </html>

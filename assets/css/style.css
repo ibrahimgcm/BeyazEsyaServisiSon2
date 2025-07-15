@@ -5,3 +5,128 @@ body{background:#fff;color:#222;font-family:Arial,Helvetica,sans-serif;margin:0;
 #yorumlar li .yorum-icon {position:absolute;left:10px;top:10px;}
 #yorumlar li span[itemprop=reviewBody] {margin-left:28px;}
 #yorumlar li span[itemprop=author], #yorumlar li .review-author {margin-left:22px;} 
+/* Hero Section (Mobile) */
+.hero-section {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f8f8;
+  position: relative;
+  overflow: hidden;
+}
+.hero-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+.hero-section .hero-title {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  letter-spacing: 1px;
+}
+@media (min-width: 600px) {
+  .hero-section {
+    height: 320px;
+  }
+  .hero-section .hero-title {
+    font-size: 2rem;
+  }
+} 
+/* HİZMETLER İKON ÖZETİ */
+.hizmetler-ikon-ozet {
+  max-width: 600px;
+  margin: 0 auto 32px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px 18px;
+  justify-items: center;
+  align-items: start;
+}
+.hizmet-ikon-kutu {
+  background: #f8f8f8;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px #0001;
+  padding: 22px 12px 18px 12px;
+  text-align: center;
+  min-width: 120px;
+  min-height: 120px;
+  transition: box-shadow .2s, transform .2s;
+}
+.hizmet-ikon-kutu:hover {
+  box-shadow: 0 4px 16px #1976d233;
+  transform: translateY(-2px) scale(1.03);
+}
+.hizmet-ikon-kutu div:first-child {
+  font-size: 2.2em;
+  margin-bottom: 6px;
+}
+.hizmet-ikon-kutu div:nth-child(2) {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-top: 8px;
+  color: #1976d2;
+}
+.hizmet-ikon-kutu div:nth-child(3) {
+  font-size: .98em;
+  color: #444;
+  margin-top: 4px;
+}
+@media (max-width: 600px) {
+  .hizmetler-ikon-ozet {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 8px;
+  }
+  .hizmet-ikon-kutu {
+    padding: 14px 4px 12px 4px;
+    min-width: 90px;
+    min-height: 90px;
+    font-size: .98em;
+  }
+  .hizmet-ikon-kutu div:first-child {
+    font-size: 1.5em;
+  }
+} 
+/* Sabit Arama Butonu */
+#floating-search-btn {
+  display: none;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 16px 28px 16px 20px;
+  box-shadow: 0 4px 16px #0002;
+  font-size: 1.15em;
+  font-weight: 600;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background .2s, box-shadow .2s, transform .2s;
+}
+#floating-search-btn:hover, #floating-search-btn:focus {
+  background: #1565c0;
+  box-shadow: 0 6px 24px #1976d244;
+  transform: scale(1.04);
+}
+@media (max-width: 600px) {
+  #floating-search-btn {
+    bottom: 14px;
+    right: 10px;
+    padding: 12px 18px 12px 14px;
+    font-size: 1em;
+  }
+} 
